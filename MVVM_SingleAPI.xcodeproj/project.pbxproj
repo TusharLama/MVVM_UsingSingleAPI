@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8008C827F9AF2700848AC6 /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = CE8008C727F9AF2700848AC6 /* MockData.json */; };
+		CE87F78A27EB171A0044B26B /* PokemonListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87F78927EB171A0044B26B /* PokemonListViewModelTest.swift */; };
 		CE897A8A27E43A3D006B34BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE897A8927E43A3D006B34BE /* AppDelegate.swift */; };
 		CE897A8C27E43A3D006B34BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE897A8B27E43A3D006B34BE /* SceneDelegate.swift */; };
 		CE897A8E27E43A3D006B34BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE897A8D27E43A3D006B34BE /* ViewController.swift */; };
@@ -24,9 +26,23 @@
 		CEC9AA4B27E49557008A2DA8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9AA4A27E49557008A2DA8 /* UIViewExtension.swift */; };
 		CEC9AA4E27E496AB008A2DA8 /* PokemonNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9AA4D27E496AB008A2DA8 /* PokemonNameCell.swift */; };
 		CEC9AA5127E496EE008A2DA8 /* PokemonNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9AA5027E496EE008A2DA8 /* PokemonNameCell.xib */; };
+		CEF206F027F9927F0067B90F /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF206EF27F9927F0067B90F /* MockAPIService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE87F78B27EB171A0044B26B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE897A7E27E43A3D006B34BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE897A8527E43A3D006B34BE;
+			remoteInfo = MVVM_SingleAPI;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CE8008C727F9AF2700848AC6 /* MockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
+		CE87F78727EB171A0044B26B /* MVVM_SingleAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVM_SingleAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE87F78927EB171A0044B26B /* PokemonListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewModelTest.swift; sourceTree = "<group>"; };
 		CE897A8627E43A3D006B34BE /* MVVM_SingleAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_SingleAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE897A8927E43A3D006B34BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE897A8B27E43A3D006B34BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,15 +56,23 @@
 		CEC9AA3B27E453FA008A2DA8 /* PokemonListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListModel.swift; sourceTree = "<group>"; };
 		CEC9AA3E27E457C2008A2DA8 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		CEC9AA4027E45DFE008A2DA8 /* NetWorkLayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkLayerHelper.swift; sourceTree = "<group>"; };
-		CEC9AA4327E477CE008A2DA8 /* PokemonListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListRequest.swift; sourceTree = "<group>"; };
+		CEC9AA4327E477CE008A2DA8 /* PokemonListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListRequest.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CEC9AA4627E478AB008A2DA8 /* PokemonConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonConstant.swift; sourceTree = "<group>"; };
 		CEC9AA4827E49522008A2DA8 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		CEC9AA4A27E49557008A2DA8 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		CEC9AA4D27E496AB008A2DA8 /* PokemonNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonNameCell.swift; sourceTree = "<group>"; };
 		CEC9AA5027E496EE008A2DA8 /* PokemonNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonNameCell.xib; sourceTree = "<group>"; };
+		CEF206EF27F9927F0067B90F /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE87F78427EB171A0044B26B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE897A8327E43A3D006B34BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,10 +83,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE8008C427F9AE3600848AC6 /* MockJson */ = {
+			isa = PBXGroup;
+			children = (
+				CE8008C727F9AF2700848AC6 /* MockData.json */,
+			);
+			path = MockJson;
+			sourceTree = "<group>";
+		};
+		CE87F78827EB171A0044B26B /* MVVM_SingleAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE87F78927EB171A0044B26B /* PokemonListViewModelTest.swift */,
+				CEF206EF27F9927F0067B90F /* MockAPIService.swift */,
+			);
+			path = MVVM_SingleAPITests;
+			sourceTree = "<group>";
+		};
 		CE897A7D27E43A3D006B34BE = {
 			isa = PBXGroup;
 			children = (
 				CE897A8827E43A3D006B34BE /* MVVM_SingleAPI */,
+				CE87F78827EB171A0044B26B /* MVVM_SingleAPITests */,
 				CE897A8727E43A3D006B34BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				CE897A8627E43A3D006B34BE /* MVVM_SingleAPI.app */,
+				CE87F78727EB171A0044B26B /* MVVM_SingleAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +121,7 @@
 		CE897A8827E43A3D006B34BE /* MVVM_SingleAPI */ = {
 			isa = PBXGroup;
 			children = (
+				CE8008C427F9AE3600848AC6 /* MockJson */,
 				CEC9AA4527E4789C008A2DA8 /* Constant */,
 				CEC9AA3D27E457B2008A2DA8 /* CommonNetworkLayer */,
 				CEC9AA3627E44E9D008A2DA8 /* PokemonListModule */,
@@ -191,6 +235,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE87F78627EB171A0044B26B /* MVVM_SingleAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE87F78F27EB171A0044B26B /* Build configuration list for PBXNativeTarget "MVVM_SingleAPITests" */;
+			buildPhases = (
+				CE87F78327EB171A0044B26B /* Sources */,
+				CE87F78427EB171A0044B26B /* Frameworks */,
+				CE87F78527EB171A0044B26B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE87F78C27EB171A0044B26B /* PBXTargetDependency */,
+			);
+			name = MVVM_SingleAPITests;
+			productName = MVVM_SingleAPITests;
+			productReference = CE87F78727EB171A0044B26B /* MVVM_SingleAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CE897A8527E43A3D006B34BE /* MVVM_SingleAPI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE897A9A27E43A3E006B34BE /* Build configuration list for PBXNativeTarget "MVVM_SingleAPI" */;
@@ -218,6 +280,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					CE87F78627EB171A0044B26B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = CE897A8527E43A3D006B34BE;
+					};
 					CE897A8527E43A3D006B34BE = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -237,11 +303,19 @@
 			projectRoot = "";
 			targets = (
 				CE897A8527E43A3D006B34BE /* MVVM_SingleAPI */,
+				CE87F78627EB171A0044B26B /* MVVM_SingleAPITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE87F78527EB171A0044B26B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE897A8427E43A3D006B34BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,12 +324,22 @@
 				CE897A9327E43A3E006B34BE /* Assets.xcassets in Resources */,
 				CEC9AA5127E496EE008A2DA8 /* PokemonNameCell.xib in Resources */,
 				CE897A9127E43A3D006B34BE /* Main.storyboard in Resources */,
+				CE8008C827F9AF2700848AC6 /* MockData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE87F78327EB171A0044B26B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF206F027F9927F0067B90F /* MockAPIService.swift in Sources */,
+				CE87F78A27EB171A0044B26B /* PokemonListViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE897A8227E43A3D006B34BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,6 +362,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CE87F78C27EB171A0044B26B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE897A8527E43A3D006B34BE /* MVVM_SingleAPI */;
+			targetProxy = CE87F78B27EB171A0044B26B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		CE897A8F27E43A3D006B34BE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -298,6 +390,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE87F78D27EB171A0044B26B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.id.MVVM-SingleAPITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM_SingleAPI.app/MVVM_SingleAPI";
+			};
+			name = Debug;
+		};
+		CE87F78E27EB171A0044B26B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xyz.id.MVVM-SingleAPITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM_SingleAPI.app/MVVM_SingleAPI";
+			};
+			name = Release;
+		};
 		CE897A9827E43A3E006B34BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -476,6 +602,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE87F78F27EB171A0044B26B /* Build configuration list for PBXNativeTarget "MVVM_SingleAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE87F78D27EB171A0044B26B /* Debug */,
+				CE87F78E27EB171A0044B26B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CE897A8127E43A3D006B34BE /* Build configuration list for PBXProject "MVVM_SingleAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

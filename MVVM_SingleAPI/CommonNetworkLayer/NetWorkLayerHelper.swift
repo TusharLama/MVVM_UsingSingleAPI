@@ -18,8 +18,11 @@ enum HTTPMethod: String {
 }
 
 protocol NetworkServiceProtocol {
-    func request<Request: DataRequest>(_ request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void)
+    func request<Request: DataRequest>(_ request: Request, completion: @escaping (Result<Request.Response, Error >) -> Void)
 }
+
+
+
 
 protocol DataRequest {
     associatedtype Response
@@ -42,8 +45,6 @@ extension DataRequest where Response: Decodable {
     func decode(_ data: Data) throws -> Response {
         let decoder = JSONDecoder()
         return try decoder.decode(Response.self, from: data)
-        
-        
         
     }
 }

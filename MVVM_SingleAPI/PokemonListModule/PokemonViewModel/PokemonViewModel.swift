@@ -11,8 +11,8 @@ protocol ProkemonListViewModelProtocol{
 
    //optinal closure because Closure is already escaping in optional type argument
     
-    var bindPokemonViewModelToController: (() -> Void)? { get set }
-    var errorMessage: String? { get set }
+    var bindPokemonViewModelToController: (() -> Void)? {get}
+    var errorMessage: String? { get }
     func fetchPokemonList()
     
 }
@@ -20,7 +20,7 @@ protocol ProkemonListViewModelProtocol{
 
 class PokemonListViewModel: ProkemonListViewModelProtocol{
     
-    private (set) var pokemonListModel: PokemonListModel? {
+       var pokemonListModel: PokemonListModel? {
         didSet{
            // Value of optional type '(() -> Void)?' must be unwrapped to a value of type '() -> Void'
             (self.bindPokemonViewModelToController ?? ({}))()
@@ -28,15 +28,18 @@ class PokemonListViewModel: ProkemonListViewModelProtocol{
         }
     }
     
-    let networkLayer: DefaultManagerClass
+    let networkLayer: NetworkServiceProtocol
     var bindPokemonViewModelToController: (() -> Void)?
+    
+    
     var errorMessage: String?
     
   
-    init(netWorkObj: DefaultManagerClass){
+    init(netWorkObj : NetworkServiceProtocol  = DefaultManagerClass()){
         self.networkLayer = netWorkObj
         fetchPokemonList()
     }
+    
     
     
     func fetchPokemonList() {
@@ -45,6 +48,7 @@ class PokemonListViewModel: ProkemonListViewModelProtocol{
             
             switch result{
             case .success(let response):
+                
                 self?.pokemonListModel = response
                 
             case .failure(let error):

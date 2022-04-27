@@ -35,7 +35,6 @@ class ViewController: UIViewController {
                         if let weakSelf = self{
                             Utility.showSimpleAlert(title: self?.viewModel.errorMessage ?? "", message: "Please try again after some time", controller: weakSelf)
                         }
-                        
                     }
                 }
             }
