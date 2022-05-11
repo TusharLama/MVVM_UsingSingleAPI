@@ -54,9 +54,7 @@ extension PokemonListViewModelTest{
             let decoder = JSONDecoder()
             let mockData = try! decoder.decode(PokemonListModel?.self, from: data)
              return mockData
-        
-        
-        
+                
     }
     
   
